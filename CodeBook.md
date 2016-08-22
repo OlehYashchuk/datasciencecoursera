@@ -1,11 +1,8 @@
-# This is the Code Book
+## This is the Code Book
 ## Preview
 1. GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information
 
 2. a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md
-
-
-## DATA DICTIONARY
 
 Work was carried out according to the instructions step by step
 
