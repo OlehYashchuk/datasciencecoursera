@@ -1,6 +1,6 @@
 getwd()
-setwd('d:/Oleh/Coursera/Data Science/3 Getting and Cleaning Data')
-# setwd('d:/D/Coursera/Data Science/Getting and Cleaning Data/Course Project/datasciencecoursera/3 Getting and Cleaning Data')
+# setwd('d:/Oleh/Coursera/Data Science/3 Getting and Cleaning Data')
+setwd('d:/D/Coursera/Data Science/Getting and Cleaning Data/Course Project/datasciencecoursera/3 Getting and Cleaning Data')
 
 library(dplyr)
 
@@ -22,7 +22,7 @@ dir('./UCI HAR Dataset')
 
 # Exporting train sample
 X_train <- read.table('./UCI HAR Dataset/train/X_train.txt')
-# Size of X_train, mb
+# Size of X_train, ~33 mb
 # 7352*561*8/1000000
 y_train <- read.table('./UCI HAR Dataset/train/y_train.txt')
 subject_train <- read.table('./UCI HAR Dataset/train/subject_train.txt')
@@ -40,7 +40,7 @@ head(features)
 
 
 # ##############################################################################
-# 1. Merges the training and the test sets to create one data set.
+# 1. Merges the training data set and the test data set to create one data set.
 
 
 # Binding together train and test samples
@@ -84,8 +84,6 @@ data <- data[, c('activity', 'subject', interestingColumns)]
 
 
 
-
-
 # ##############################################################################
 # 5. From the data set in step 4, creates a second, independent tidy data set 
 # with the average of each variable for each activity and each subject. 
@@ -102,3 +100,9 @@ colnames(tidyData) <- c(names(tidyData[1 : 2]),
                                    names(tidyData[3 : length(tidyData)]))))
 
 tidyData <- as.data.frame(tidyData)
+head(tidyData)
+
+
+
+# Saving tidy data set
+write.table(tidyData, './UCI HAR Dataset/tidyData')
