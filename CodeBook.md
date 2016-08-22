@@ -7,8 +7,8 @@
 
 ## DATA DICTIONARY
 
-# 0. Loading initial data set
-# url <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+'# 0. Loading initial data set
+'# url <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 # f <- file.path('.', 'InitialData.zip')
 # download.file(url, f)
 # unzip('./InitialData.zip')
