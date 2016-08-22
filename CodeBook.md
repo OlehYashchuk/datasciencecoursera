@@ -7,27 +7,43 @@
 
 ## DATA DICTIONARY
 
-'# 0. Loading initial data set
-'# url <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
-# f <- file.path('.', 'InitialData.zip')
-# download.file(url, f)
-# unzip('./InitialData.zip')
+Work was carried out according to the instructions step by step
 
-dir('./UCI HAR Dataset')
+# Step 0. Loading initial data set 
+1). Loading initial data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+2). Exporting all the data: train sample, test sample, activity labels, features
+X_train - train sample
+y_train - train labels 
+subject_train - subject who performed the activity
 
-# Exporting train sample
-X_train <- read.table('./UCI HAR Dataset/train/X_train.txt')
-# Size of X_train, ~33 mb
-# 7352*561*8/1000000
-y_train <- read.table('./UCI HAR Dataset/train/y_train.txt')
-subject_train <- read.table('./UCI HAR Dataset/train/subject_train.txt')
+X_test - test sample
+y_test - test labels 
+subject_test - subject who performed the activity
 
-# Exporting test sample
-X_test <- read.table('./UCI HAR Dataset/test/X_test.txt')
-y_test <- read.table('./UCI HAR Dataset/test/y_test.txt')
-subject_test <- read.table('./UCI HAR Dataset/test/subject_test.txt')
+activity_labels - activity names
+features - List of all features
 
-# Exporting labels
-activity_labels <- read.table('./UCI HAR Dataset/activity_labels.txt')
-features <- read.table('./UCI HAR Dataset/features.txt')
 
+# Step 1. Merges the training data set and the test data set to create one data set
+X - combined test and train samples
+y - combined test and train labels
+subject - combined test and train subject
+
+# Step 2. Extracts only the measurements on the mean and standard deviation for each measurement
+points - number of variables that contain the mean either the variance
+X - combined test and train samples with columns specified by "points"
+data - binded together activity labels, subject and combained train and test samples "X"
+
+# Step 3. Uses descriptive activity names to name the activities in the data set
+data$V1 - pulled up the names of the activities by its code
+
+# Step 4. Appropriately labels the data set with descriptive variable names
+colnames() - pulling up the names of the columns to the "data" variable
+
+# Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+tidyData - appropriate tidy data set cooked with dplyr
+colnames() - all variables in tidyData receive the prefix "mean-of-the-"
+
+# Saving tidy data set
+write.table()
