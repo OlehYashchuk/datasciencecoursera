@@ -1,7 +1,7 @@
 getwd()
 # setwd('d:/Oleh/Coursera/Data Science/3 Getting and Cleaning Data')
 setwd('d:/D/Coursera/Data Science/Getting and Cleaning Data/Course Project/datasciencecoursera/3 Getting and Cleaning Data')
-
+dir()
 library(dplyr)
 
 rm(list = ls())
