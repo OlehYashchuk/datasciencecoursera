@@ -10,7 +10,7 @@
 subject - The ID of the test subject  
 activity - The type of activity performed when the corresponding measurements were taken  
 
-# Measurements  
+# Measurements  (Range [-1; 1])
 - mean-of-the-tBodyAcc-mean()-X  
 - mean-of-the-tBodyAcc-mean()-Y  
 - mean-of-the-tBodyAcc-mean()-Z  
@@ -99,9 +99,9 @@ activity - The type of activity performed when the corresponding measurements we
 - mean-of-the-angle(Z,gravityMean)  
 
 # Activity Labels  
-- WALKING: subject was walking during the test
-- WALKING_UPSTAIRS: subject was walking up a staircase during the test
-- WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
-- SITTING: subject was sitting during the test
-- STANDING: subject was standing during the test
-- LAYING: subject was laying down during the test
+- WALKING
+- WALKING_UPSTAIRS
+- WALKING_DOWNSTAIRS
+- SITTING
+- STANDING
+- LAYING
