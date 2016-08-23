@@ -48,6 +48,7 @@ subject <- rbind(subject_train, subject_test)
 # 2. Extracts only the measurements on the mean and standard deviation 
 # for each measurement.
 
+# I intentionally including meanFreq(), gravityMean etc. 
 points <- features$V1[grep(c('[Mm]ean|[Ss]td'), features$V2)]
 X <- select(X, points)
 
