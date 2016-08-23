@@ -1,6 +1,6 @@
 # This is a brief description of the implementation of the project with an explanation of the variables and functions.
 
-### Coure Project was carried out according to the instructions step by step  
+### Coure Project was carried out according to the instructions step by step.
 
 
 
@@ -20,7 +20,7 @@ y_test - test labels
 subject_test - subject who performed the activity
 
 activity_labels - activity names  
-features - List of all features
+features - list of all features
 
 
 ## Step 1. Merges the training data set and the test data set to create one data set
@@ -47,4 +47,4 @@ tidyData - appropriate tidy data set cooked with dplyr
 colnames() - all variables in tidyData receive the prefix "mean-of-the-"  
   
 ## Saving tidy data set
-write.table()
+#### write.table()
