@@ -1,12 +1,11 @@
-cd 'd:\Oleh\Coursera\Data Science'
-cd 'd:\D\Coursera\Data Science\Getting and Cleaning Data\Course Project'
+cd '...'
 ls -al
 
 
 git init
-git remote add origin 'https://github.com/OlehYashchuk/datasciencecoursera'
-git config --global user.name 'OlehYashchuk'
-git config --global user.email 'OlehYashchuk@gmail.com'
+git remote add origin '...'
+git config --global user.name '...'
+git config --global user.email '...'
 git config --list
 
 
