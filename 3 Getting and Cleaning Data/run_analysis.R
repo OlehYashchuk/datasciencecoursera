@@ -1,5 +1,5 @@
 getwd()
-setwd('d:/D/Coursera/Data Science/Getting and Cleaning Data/Course Project/datasciencecoursera/3 Getting and Cleaning Data')
+setwd('...')
 
 library(dplyr)
 
