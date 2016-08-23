@@ -4,7 +4,7 @@
 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
-- A 86-feature vector with mean time and frequency domain variables. 
+- A 86-feature vector with mean time and frequency domain variables (including meanFreq(), gravityMean etc.) 
 
 # Identifiers
 subject - The ID of the test subject  
