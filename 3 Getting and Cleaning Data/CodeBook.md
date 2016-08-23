@@ -3,7 +3,7 @@
 # For each record it is provided:
 
 - Its activity label. 
-- An identifier of the subject who carried out the experiment.
+- An identifier of the subject who carried out the experiment (30 subjects).
 - A 86-feature vector with mean time and frequency domain variables (including meanFreq(), gravityMean etc.) 
 
 # Identifiers
