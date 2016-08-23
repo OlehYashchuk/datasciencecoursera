@@ -1,14 +1,16 @@
-# Coure Project was carried out according to the instructions step by step  
+# This is a brief description of the implementation of the project with an explanation of the variables and functions.
 
-## This is a brief description of the implementation of the project with an explanation of the variables and functions.
+### Coure Project was carried out according to the instructions step by step  
 
-### Step 0. Loading initial data set 
+
+
+## Step 0. Loading initial data set 
 1). Loading initial data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 #### download.file() - loading initial data set  
 #### unzip() - decompressing data  
   
 2). Exporting all the data: train sample, test sample, activity labels, features
-#### function: read.table()
+#### functions: read.table()
 X_train - train sample  
 y_train - train labels  
 subject_train - subject who performed the activity
@@ -22,7 +24,7 @@ features - List of all features
 
 
 ## Step 1. Merges the training data set and the test data set to create one data set
-#### function: rbind()  
+#### functions: rbind()  
 X - combined test and train samples  
 y - combined test and train labels  
 subject - combined test and train subject
@@ -41,7 +43,7 @@ data$V1 - pulled up the names of the activities by its code
 
 ## Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 #### functions: group_by(), summarize_each(), gsub(), paste()  
-tidyData - appropriate tidy data set cooked with dplyr
+tidyData - appropriate tidy data set cooked with dplyr  
 colnames() - all variables in tidyData receive the prefix "mean-of-the-"  
   
 ## Saving tidy data set
